@@ -14,7 +14,9 @@ class MenuResource extends Resource
 {
     public static $model = \OptimistDigital\MenuBuilder\Models\Menu::class;
     public static $search = ['name', 'slug'];
-    public static $displayInNavigation = false;
+    public static $displayInNavigation = true;
+    public static $group = 'Site';
+    
 
     public function __construct($resource)
     {
